@@ -384,8 +384,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Data Understanding</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
 </ul>
             </nav>
         </div>
@@ -399,9 +397,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="laporan-proyek-1">
 <h1>Laporan Proyek 1<a class="headerlink" href="#laporan-proyek-1" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
 <section id="pengembangan-model-prediksi-harga-chainlink-link-usd-berbasis-machine-learning-untuk-analisis-fluktuasi-pasar-kripto">
 <h2>Pengembangan Model Prediksi Harga Chainlink (LINK-USD) Berbasis Machine Learning untuk Analisis Fluktuasi Pasar Kripto<a class="headerlink" href="#pengembangan-model-prediksi-harga-chainlink-link-usd-berbasis-machine-learning-untuk-analisis-fluktuasi-pasar-kripto" title="Link to this heading">#</a></h2>
 </section>
@@ -441,6 +436,37 @@ This page shows off a notebook written in MyST Markdown.</p>
 <p>With MyST Markdown, you can define code cells with a directive like so:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">seaborn</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: seaborn in c:\laragon\bin\python\python-3.10\lib\site-packages (0.13.2)
+Requirement already satisfied: numpy!=1.24.0,&gt;=1.20 in c:\laragon\bin\python\python-3.10\lib\site-packages (from seaborn) (1.26.4)
+Requirement already satisfied: pandas&gt;=1.2 in c:\laragon\bin\python\python-3.10\lib\site-packages (from seaborn) (2.2.2)
+Requirement already satisfied: matplotlib!=3.6.1,&gt;=3.4 in c:\laragon\bin\python\python-3.10\lib\site-packages (from seaborn) (3.9.0)
+Requirement already satisfied: contourpy&gt;=1.0.1 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.2.1)
+Requirement already satisfied: cycler&gt;=0.10 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (0.12.1)
+Requirement already satisfied: fonttools&gt;=4.22.0 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (4.53.0)
+Requirement already satisfied: kiwisolver&gt;=1.3.1 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.4.5)
+Requirement already satisfied: packaging&gt;=20.0 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (24.0)
+Requirement already satisfied: pillow&gt;=8 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (10.3.0)
+Requirement already satisfied: pyparsing&gt;=2.3.1 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (3.1.2)
+Requirement already satisfied: python-dateutil&gt;=2.7 in c:\laragon\bin\python\python-3.10\lib\site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (2.9.0.post0)
+Requirement already satisfied: pytz&gt;=2020.1 in c:\laragon\bin\python\python-3.10\lib\site-packages (from pandas&gt;=1.2-&gt;seaborn) (2024.1)
+Requirement already satisfied: tzdata&gt;=2022.7 in c:\laragon\bin\python\python-3.10\lib\site-packages (from pandas&gt;=1.2-&gt;seaborn) (2024.1)
+Requirement already satisfied: six&gt;=1.5 in c:\laragon\bin\python\python-3.10\lib\site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.16.0)
+Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[notice] A new release of pip is available: 24.1 -&gt; 24.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -467,35 +493,185 @@ This page shows off a notebook written in MyST Markdown.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># Membaca data</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            Open  High   Low  Close  Adj Close      Volume
+Date                                                      
+2022-12-06   7.3   7.3   7.0    7.1        7.1   253542935
+2022-12-07   7.1   7.1   6.8    6.9        6.9   238394478
+2022-12-08   6.9   7.1   6.8    7.0        7.0   198390377
+2022-12-09   7.0   7.0   6.8    6.9        6.9   163188841
+2022-12-10   6.9   6.9   6.8    6.9        6.9   138343803
+...          ...   ...   ...    ...        ...         ...
+2024-12-01  19.0  19.1  18.5   18.9       18.9   638179234
+2024-12-02  18.9  26.5  18.7   25.1       25.1  8935516000
+2024-12-03  25.1  26.1  23.0   24.2       24.2  3344542573
+2024-12-04  24.2  26.3  23.7   24.1       24.1  2233316427
+2024-12-05  24.1  24.7  23.1   23.4       23.4  1655548492
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
+[731 rows x 6 columns]
 </pre></div>
 </div>
 </div>
 </div>
 <p>b. Deskripsi Dataset</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Volume&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+DatetimeIndex: 731 entries, 2022-12-06 to 2024-12-05
+Data columns (total 6 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   Open       731 non-null    float64
+ 1   High       731 non-null    float64
+ 2   Low        731 non-null    float64
+ 3   Close      731 non-null    float64
+ 4   Adj Close  731 non-null    float64
+ 5   Volume     731 non-null    int64  
+dtypes: float64(5), int64(1)
+memory usage: 40.0 KB
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mencari Missing Value</span>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Volume&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Adj Close</th>
+      <th>Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>731.000000</td>
+      <td>731.000000</td>
+      <td>731.000000</td>
+      <td>731.000000</td>
+      <td>731.000000</td>
+      <td>7.310000e+02</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>11.162791</td>
+      <td>11.505062</td>
+      <td>10.841587</td>
+      <td>11.184679</td>
+      <td>11.184679</td>
+      <td>3.982736e+08</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>4.512113</td>
+      <td>4.710279</td>
+      <td>4.343302</td>
+      <td>4.532611</td>
+      <td>4.532611</td>
+      <td>4.333476e+08</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>5.100000</td>
+      <td>5.200000</td>
+      <td>5.000000</td>
+      <td>5.100000</td>
+      <td>5.100000</td>
+      <td>6.901831e+07</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7.000000</td>
+      <td>7.200000</td>
+      <td>6.800000</td>
+      <td>7.000000</td>
+      <td>7.000000</td>
+      <td>1.969127e+08</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>10.900000</td>
+      <td>11.200000</td>
+      <td>10.500000</td>
+      <td>10.900000</td>
+      <td>10.900000</td>
+      <td>2.885893e+08</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>14.500000</td>
+      <td>15.000000</td>
+      <td>14.100000</td>
+      <td>14.500000</td>
+      <td>14.500000</td>
+      <td>4.897816e+08</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>25.100000</td>
+      <td>26.500000</td>
+      <td>23.700000</td>
+      <td>25.100000</td>
+      <td>25.100000</td>
+      <td>8.935516e+09</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mencari Missing Value</span>
 <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="id1">
 <h2>Data Understanding<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
@@ -508,8 +684,20 @@ This page shows off a notebook written in MyST Markdown.</p>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/82c812f3e702905413d5bf55f6753426a9dd40d3ac9070678c93cdeda78b85f6.png" src="_images/82c812f3e702905413d5bf55f6753426a9dd40d3ac9070678c93cdeda78b85f6.png" />
+<img alt="_images/7256c25bfd7e21a803b50f75ce208ec3acc4687037fbb99ad2fd5f450b89e9d6.png" src="_images/7256c25bfd7e21a803b50f75ce208ec3acc4687037fbb99ad2fd5f450b89e9d6.png" />
+<img alt="_images/d2dcea3b5121fbf8c0f5b9c124e92aa1edac4e620fc44134414c2a9c883661e5.png" src="_images/d2dcea3b5121fbf8c0f5b9c124e92aa1edac4e620fc44134414c2a9c883661e5.png" />
+<img alt="_images/226a8a345f1a89fcc64a026d4efc5326f0113116157d484b62a0f508ddd806b4.png" src="_images/226a8a345f1a89fcc64a026d4efc5326f0113116157d484b62a0f508ddd806b4.png" />
+<img alt="_images/c028ff0dde6585a1b5d7a4fec5a2e342cf7ed5847bf8eadef8280faae06ebd93.png" src="_images/c028ff0dde6585a1b5d7a4fec5a2e342cf7ed5847bf8eadef8280faae06ebd93.png" />
+<img alt="_images/072969e9284b6cfe019eeefb3804699685b91d776d1c884a05a6be2deaa4a82e.png" src="_images/072969e9284b6cfe019eeefb3804699685b91d776d1c884a05a6be2deaa4a82e.png" />
+</div>
+</div>
 <p>korelasi antar fitur</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -517,17 +705,181 @@ This page shows off a notebook written in MyST Markdown.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Volume&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">])</span>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d5bfc74b4aad7e271ecb42718536988b7d5080cc8d8cd984c053e1540b564afc.png" src="_images/d5bfc74b4aad7e271ecb42718536988b7d5080cc8d8cd984c053e1540b564afc.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Volume&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">])</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close Target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>7.3</td>
+      <td>7.3</td>
+      <td>7.0</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>7.1</td>
+      <td>7.1</td>
+      <td>6.8</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>6.9</td>
+      <td>7.1</td>
+      <td>6.8</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>6.8</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>2022-12-10</th>
+      <td>6.9</td>
+      <td>6.9</td>
+      <td>6.8</td>
+      <td>6.9</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close Target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi scaler untuk fitur (input) dan target (output)</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Close Target</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>7.3</td>
+      <td>7.3</td>
+      <td>7.0</td>
+      <td>7.1</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>7.1</td>
+      <td>7.1</td>
+      <td>6.8</td>
+      <td>6.9</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>6.9</td>
+      <td>7.1</td>
+      <td>6.8</td>
+      <td>7.0</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>6.8</td>
+      <td>6.9</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>2022-12-10</th>
+      <td>6.9</td>
+      <td>6.9</td>
+      <td>6.8</td>
+      <td>6.9</td>
+      <td>6.7</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi scaler untuk fitur (input) dan target (output)</span>
 <span class="n">scaler_features</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
 <span class="n">scaler_target</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
 
@@ -546,7 +898,89 @@ This page shows off a notebook written in MyST Markdown.</p>
 <span class="n">df_normalized</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengatur fitur (X) dan target (y)</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Close Target</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>0.090</td>
+      <td>0.110</td>
+      <td>0.098592</td>
+      <td>0.106952</td>
+      <td>0.100</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>0.095</td>
+      <td>0.100</td>
+      <td>0.089202</td>
+      <td>0.096257</td>
+      <td>0.090</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>0.090</td>
+      <td>0.090</td>
+      <td>0.089202</td>
+      <td>0.096257</td>
+      <td>0.095</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>0.090</td>
+      <td>0.095</td>
+      <td>0.084507</td>
+      <td>0.096257</td>
+      <td>0.090</td>
+    </tr>
+    <tr>
+      <th>2022-12-10</th>
+      <td>0.080</td>
+      <td>0.090</td>
+      <td>0.079812</td>
+      <td>0.096257</td>
+      <td>0.090</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengatur fitur (X) dan target (y)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_normalized</span><span class="p">[[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">]]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_normalized</span><span class="p">[</span><span class="s1">&#39;Close Target&#39;</span><span class="p">]</span>
 
@@ -554,7 +988,11 @@ This page shows off a notebook written in MyST Markdown.</p>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span>
@@ -621,29 +1059,25 @@ This page shows off a notebook written in MyST Markdown.</p>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">  RMSE: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;RMSE&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">  MAPE: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;MAPE&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
 </div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
-</ol>
-<p>That’s all that is needed to get started!</p>
-</section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+<div class="cell_output docutils container">
+<img alt="_images/72278fc8e3dffd217b63caf9b8d7d0e5a5001ae87c5be4154971e55851c1bb64.png" src="_images/72278fc8e3dffd217b63caf9b8d7d0e5a5001ae87c5be4154971e55851c1bb64.png" />
+<img alt="_images/3b709b8bf561194ebc09a1ada140edb57e94e5a0d21f16a3861dcbf8683295df.png" src="_images/3b709b8bf561194ebc09a1ada140edb57e94e5a0d21f16a3861dcbf8683295df.png" />
+<img alt="_images/c0081f744beee31338756de260b8aa377fa462d45f4317617147d979b3c0d6cc.png" src="_images/c0081f744beee31338756de260b8aa377fa462d45f4317617147d979b3c0d6cc.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Neural Network (JST):
+  RMSE: 0.04
+  MAPE: 6.23%
+
+SVR:
+  RMSE: 0.08
+  MAPE: 12.39%
+
+KNN:
+  RMSE: 0.05
+  MAPE: 8.17%
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -712,8 +1146,6 @@ See the YAML at the top of this page for example.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Data Understanding</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
 </ul>
   </nav></div>
 

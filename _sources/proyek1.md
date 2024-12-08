@@ -14,10 +14,6 @@ kernelspec:
 
 # Laporan Proyek 1
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
-
 ## Pengembangan Model Prediksi Harga Chainlink (LINK-USD) Berbasis Machine Learning untuk Analisis Fluktuasi Pasar Kripto
 
 ## Pendahuluan
@@ -49,6 +45,10 @@ Dalam proyek ini, data historis yang digunakan mencakup rentang waktu dari 06 De
 With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell}
+pip install seaborn
+```
+
+```{code-cell}
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -75,21 +75,21 @@ print(df)
 
 b. Deskripsi Dataset
 
-```
+```{code-cell}
 df.info()
 ```
 
-```
+```{code-cell}
 df[['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']].describe()
 ```
 
-```
+```{code-cell}
 # Mencari Missing Value
 df.isnull().sum()
 ```
 
 ## Data Understanding
-```
+```{code-cell}
 import matplotlib.pyplot as plt
 import seaborn as sns
 for col in df:
@@ -104,7 +104,7 @@ for col in df:
 ```
 
 korelasi antar fitur
-```
+```{code-cell}
 correlation_matrix = df.corr()
 
 plt.figure(figsize=(7, 3))
@@ -113,19 +113,19 @@ plt.title('Heatmap Korelasi Antar Fitur')
 plt.show()
 ```
 
-```
+```{code-cell}
 df = df.drop(columns=['Volume', 'Adj Close'])
 df.head()
 ```
 
-```
+```{code-cell}
 df['Close Target'] = df['Close'].shift(-1)
 
 df = df[:-1]
 df.head()
 ```
 
-```
+```{code-cell}
 # Inisialisasi scaler untuk fitur (input) dan target (output)
 scaler_features = MinMaxScaler()
 scaler_target = MinMaxScaler()
@@ -145,7 +145,7 @@ df_normalized = pd.concat([df_target_normalized, df_features_normalized], axis=1
 df_normalized.head()
 ```
 
-```
+```{code-cell}
 # Mengatur fitur (X) dan target (y)
 X = df_normalized[['Open', 'High', 'Low', 'Close']]
 y = df_normalized['Close Target']
@@ -154,7 +154,7 @@ y = df_normalized['Close Target']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, shuffle=False)
 ```
 
-```
+```{code-cell}
 from sklearn.neural_network import MLPRegressor
 from sklearn.svm import SVR
 from sklearn.neighbors import KNeighborsRegressor
@@ -222,28 +222,3 @@ for model, metrics in results.items():
     print(f"{model}:\n  RMSE: {metrics['RMSE']:.2f}\n  MAPE: {metrics['MAPE']:.2f}%\n")
 ```
 
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
-
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
-
-## Create a notebook with MyST Markdown
-
-MyST Markdown notebooks are defined by two things:
-
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
-
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
-```
-jupyter-book myst init path/to/markdownfile.md
-```

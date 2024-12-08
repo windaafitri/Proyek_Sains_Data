@@ -45,6 +45,10 @@ Tampilan dari data harga minyak:
 
 ## Read Data
 
+```{code-cell}
+pip install seaborn
+```
+
 With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell}
@@ -61,7 +65,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 #Mengambil dan menampilkan data
-df = pd.read_excel('/content/drive/MyDrive/PSD/DataMinyak/OilPrice/harga_minyak.xlsx')
+df = pd.read_csv('https://raw.githubusercontent.com/windaafitri/dataset/refs/heads/main/harga_minyak.csv')
 df
 ```
 
@@ -75,10 +79,6 @@ Dataset terdiri dari 2 fitur atau kolom dan 249 baris data.
 Tanggal: Kolom ini mencatat tanggal pengamatan harga minyak goreng dan menggunakan format seperti DD/MM/YYYY
 Harga: Kolom ini mencatat harga minyak goreng pada tanggal tertentu.
 
-```{code-cell}
-from google.colab import drive
-drive.mount('/content/drive')
-```
 
 ```{code-cell}
 # Pastikan kolom 'Date' dalam format datetime dengan dayfirst=True

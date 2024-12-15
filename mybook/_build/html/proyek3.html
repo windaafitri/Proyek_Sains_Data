@@ -1,0 +1,1234 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Laporan Proyek 3 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'proyek3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Laporan Proyek 2" href="proyek2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="proyek1.html">Laporan Proyek 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proyek2.html">Laporan Proyek 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Laporan Proyek 3</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproyek3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/proyek3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Laporan Proyek 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-saham-rigetti-computing-rgti-data-historis-untuk-strategi-investasi-inovatif">Prediksi Saham Rigetti Computing (RGTI): Data Historis untuk Strategi Investasi Inovatif</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-proyek">Tujuan Proyek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologi">Metodologi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi">Eksplorasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tren-setiap-fitur">Tren Setiap Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-antar-fitur">Korelasi Antar Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-fitur-yang-tidak-relevan">Menghapus Fitur yang Tidak Relevan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekayasa-fitur">Rekayasa Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forecasting">Forecasting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="laporan-proyek-3">
+<h1>Laporan Proyek 3<a class="headerlink" href="#laporan-proyek-3" title="Link to this heading">#</a></h1>
+<section id="prediksi-saham-rigetti-computing-rgti-data-historis-untuk-strategi-investasi-inovatif">
+<h2>Prediksi Saham Rigetti Computing (RGTI): Data Historis untuk Strategi Investasi Inovatif<a class="headerlink" href="#prediksi-saham-rigetti-computing-rgti-data-historis-untuk-strategi-investasi-inovatif" title="Link to this heading">#</a></h2>
+</section>
+<section id="pendahuluan">
+<h2>Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+</section>
+<section id="latar-belakang">
+<h2>Latar Belakang<a class="headerlink" href="#latar-belakang" title="Link to this heading">#</a></h2>
+<p>Quantum Computing adalah bidang yang merevolusi dunia teknologi dengan prinsip mekanika kuantum untuk pemrosesan data yang lebih cepat dan efisien. Rigetti Computing (RGTI) adalah salah satu pemain utama dalam industri ini, mengembangkan perangkat keras dan perangkat lunak berbasis teknologi hybrid quantum-classical. Sebagai perusahaan inovatif di sektor teknologi tinggi, fluktuasi harga saham Rigetti sering mencerminkan kemajuan teknologi, dinamika pasar, serta faktor global lainnya.</p>
+<p>Fluktuasi harga saham Rigetti yang signifikan sering menjadi tantangan bagi investor dalam membuat keputusan yang tepat. Untuk menghadapi tantangan ini, model prediksi harga berbasis data historis dan kecerdasan buatan dapat membantu memberikan wawasan yang lebih mendalam. Model ini dirancang untuk memprediksi pergerakan harga saham Rigetti di masa depan, membantu investor merencanakan strategi yang lebih efektif, mengurangi risiko, dan memaksimalkan peluang keuntungan.</p>
+<p>Pengembangan model prediksi saham Rigetti menjadi penting untuk mendukung strategi investasi yang lebih terinformasi dan berbasis data. Dengan memanfaatkan data historis, proyek ini bertujuan membantu investor memahami dinamika pasar Rigetti secara lebih mendalam dan memberikan solusi praktis bagi tantangan di pasar saham teknologi tinggi, khususnya dalam sektor komputasi kuantum.</p>
+</section>
+<section id="tujuan-proyek">
+<h2>Tujuan Proyek<a class="headerlink" href="#tujuan-proyek" title="Link to this heading">#</a></h2>
+<p>Penelitian ini bertujuan untuk mengeksplorasi pemanfaatan data historis dalam memprediksi pergerakan harga saham Rigetti Computing (RGTI) guna memberikan wawasan yang lebih mendalam kepada investor dalam merancang strategi investasi yang lebih optimal. Selain itu, penelitian ini juga bertujuan untuk mengembangkan model prediksi berbasis data historis yang andal, sehingga dapat membantu investor dalam mengelola risiko serta membuat keputusan investasi yang lebih terarah dan strategis. Dengan demikian, penelitian ini diharapkan mampu memberikan solusi praktis untuk mendukung pengambilan keputusan yang lebih baik di pasar saham teknologi tinggi, khususnya di sektor komputasi kuantum.</p>
+</section>
+<section id="rumusan-masalah">
+<h2>Rumusan Masalah<a class="headerlink" href="#rumusan-masalah" title="Link to this heading">#</a></h2>
+<p>Bagaimana data historis dapat dimanfaatkan untuk memprediksi pergerakan harga saham Rigetti Computing (RGTI) dan memberikan wawasan yang lebih mendalam kepada investor dalam merancang strategi investasi yang lebih optimal? Selain itu, bagaimana analisis data historis dapat menghasilkan model prediktif yang akurat untuk membantu investor mengatasi volatilitas harga saham serta membuat keputusan investasi yang lebih berbasis data dan terinformasi?</p>
+</section>
+<section id="metodologi">
+<h2>Metodologi<a class="headerlink" href="#metodologi" title="Link to this heading">#</a></h2>
+</section>
+<section id="data-understanding">
+<h2>Data Understanding<a class="headerlink" href="#data-understanding" title="Link to this heading">#</a></h2>
+<p>a. Sumber Data
+Data yang digunakan dalam proyek ini berasal dari platform Yahoo Finance, yang menyediakan informasi historis terkait harga berbagai aset keuangan, termasuk saham teknologi tinggi. Yahoo Finance merupakan sumber data terpercaya yang sering digunakan oleh investor dan analis untuk mengakses data harga, volume perdagangan, dan indikator pasar lainnya. Dalam proyek ini, digunakan data historis harga saham Rigetti Computing (RGTI) dari tahun 2022 hingga 2024 dengan frekuensi harian. Data ini mencakup informasi seperti harga pembukaan (open), harga tertinggi (high), harga terendah (low), harga penutupan (close), serta volume perdagangan. Data ini dimanfaatkan untuk mendukung analisis dan pengembangan model prediksi harga saham Rigetti yang akurat dan berbasis data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import library</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>With MyST Markdown, you can define code cells with a directive like so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membaca data CSV</span>
+<span class="c1"># Membaca data</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/windaafitri/dataset/refs/heads/main/Rigetti.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mengubah kolom &#39;Tanggal&#39; menjadi format datetime</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">])</span>
+
+<span class="c1"># Mengatur kolom &#39;Date&#39; sebagai indeks</span>
+<span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Mensortir data berdasarkan tanggal</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            Open   High    Low  Close  Adj Close   Volume
+Date                                                     
+2022-12-06  1.12  1.150  1.040  1.050      1.050   862000
+2022-12-07  1.05  1.075  0.995  1.000      1.000  1124600
+2022-12-08  1.07  1.080  1.000  1.020      1.020   815800
+2022-12-09  1.02  1.040  0.990  0.991      0.991   669900
+2022-12-12  1.00  1.010  0.950  0.964      0.964  1228600
+</pre></div>
+</div>
+</div>
+</div>
+<p>b. Deskripsi Dataset
+Dataset ini terdiri dari 6 fitur atau kolom dan 755 record atau baris. Atribut dalam dataset ini meliputi:</p>
+<ol class="arabic simple">
+<li><p>Date: Kolom ini mencatat tanggal setiap data harga. Formatnya adalah YYYY-MM-DD (tahun-bulan-hari), yang mencakup data harian dari 1 Januari 2022 hingga 31 Desember 2024.</p></li>
+<li><p>Open: Harga pembukaan saham Rigetti Computing (RGTI) pada awal hari perdagangan. Nilai ini menunjukkan harga pertama yang tercatat ketika pasar mulai aktif pada hari tersebut.</p></li>
+<li><p>High: Harga tertinggi yang dicapai oleh saham Rigetti Computing (RGTI) selama hari perdagangan. Nilai ini menunjukkan level maksimum yang dicapai oleh saham pada hari tersebut.</p></li>
+<li><p>Low: Harga terendah yang dicapai oleh saham Rigetti Computing (RGTI) selama hari perdagangan. Nilai ini menunjukkan level minimum yang dicapai oleh saham pada hari tersebut.</p></li>
+<li><p>Close: Harga penutupan saham Rigetti Computing (RGTI) pada akhir hari perdagangan. Nilai ini adalah harga terakhir yang tercatat sebelum pasar tutup.</p></li>
+<li><p>Adj Close: Harga penutupan yang telah disesuaikan untuk faktor-faktor tertentu, seperti aksi korporasi atau pembagian dividen. Dalam kasus saham Rigetti Computing, nilai ini biasanya sama dengan harga penutupan kecuali ada penyesuaian khusus.</p></li>
+<li><p>Volume: Jumlah total saham Rigetti Computing (RGTI) yang diperdagangkan selama hari tersebut. Volume menunjukkan tingkat aktivitas perdagangan dan dapat digunakan untuk mengukur minat pasar pada saham tersebut.</p></li>
+</ol>
+<p>Data ini diambil untuk mendukung analisis dan pengembangan model prediksi harga saham Rigetti yang berbasis data dan akurat. Dataset ini mencakup informasi penting yang relevan untuk memahami dinamika harga saham dalam jangka waktu 2022 hingga 2024.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ukuran data &#39;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+DatetimeIndex: 503 entries, 2022-12-06 to 2024-12-05
+Data columns (total 6 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   Open       503 non-null    float64
+ 1   High       503 non-null    float64
+ 2   Low        503 non-null    float64
+ 3   Close      503 non-null    float64
+ 4   Adj Close  503 non-null    float64
+ 5   Volume     503 non-null    int64  
+dtypes: float64(5), int64(1)
+memory usage: 27.5 KB
+Ukuran data  (503, 6)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Open         float64
+High         float64
+Low          float64
+Close        float64
+Adj Close    float64
+Volume         int64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jenis Data</p>
+<ol class="arabic simple">
+<li><p>Open: Data numerik (kontinu), menunjukkan harga pembukaan saham Rigetti Computing (RGTI) pada awal hari perdagangan. Nilainya berupa pecahan desimal untuk mencerminkan perubahan harga dengan presisi tinggi.</p></li>
+<li><p>High: Data numerik (kontinu), mencatat harga tertinggi yang dicapai saham Rigetti Computing (RGTI) selama hari perdagangan. Nilai ini kontinu karena dapat memiliki pecahan desimal.</p></li>
+<li><p>Low: Data numerik (kontinu), menunjukkan harga terendah yang dicapai saham Rigetti Computing (RGTI) selama hari perdagangan. Data ini bersifat kontinu karena dapat memiliki pecahan desimal.</p></li>
+<li><p>Close: Data numerik (kontinu), menunjukkan harga penutupan saham Rigetti Computing (RGTI) pada akhir hari perdagangan. Nilainya kontinu dan penting untuk analisis pergerakan harga harian.</p></li>
+<li><p>Adj Close: Data numerik (kontinu), menunjukkan harga penutupan yang telah disesuaikan untuk mencerminkan peristiwa seperti pembagian dividen atau aksi korporasi lainnya. Data ini penting untuk analisis historis yang lebih akurat.</p></li>
+<li><p>Volume: Data numerik (diskrit), menunjukkan jumlah unit saham Rigetti Computing (RGTI) yang diperdagangkan selama hari tersebut. Karena volume dihitung dalam bilangan bulat (jumlah unit saham), data ini bersifat diskrit.</p></li>
+</ol>
+<p>Fitur-fitur ini mencakup informasi penting untuk memahami dinamika harga saham Rigetti Computing dari data historis, dengan karakteristik yang dapat mendukung analisis dan pengembangan model prediksi berbasis data yang akurat.</p>
+</section>
+<section id="eksplorasi">
+<h2>Eksplorasi<a class="headerlink" href="#eksplorasi" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mencari Missing Value</span>
+<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Deskripsi Statistik</span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Adj Close</th>
+      <th>Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>503.000000</td>
+      <td>503.000000</td>
+      <td>503.000000</td>
+      <td>503.000000</td>
+      <td>503.000000</td>
+      <td>5.030000e+02</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1.188958</td>
+      <td>1.261109</td>
+      <td>1.114583</td>
+      <td>1.179278</td>
+      <td>1.179278</td>
+      <td>6.646079e+06</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.491230</td>
+      <td>0.544913</td>
+      <td>0.442536</td>
+      <td>0.490800</td>
+      <td>0.490800</td>
+      <td>1.777447e+07</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.369000</td>
+      <td>0.395000</td>
+      <td>0.360000</td>
+      <td>0.375000</td>
+      <td>0.375000</td>
+      <td>2.863000e+05</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.870000</td>
+      <td>0.916000</td>
+      <td>0.820000</td>
+      <td>0.857000</td>
+      <td>0.857000</td>
+      <td>1.608000e+06</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.080000</td>
+      <td>1.130000</td>
+      <td>1.030000</td>
+      <td>1.060000</td>
+      <td>1.060000</td>
+      <td>3.126200e+06</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.360000</td>
+      <td>1.445000</td>
+      <td>1.290000</td>
+      <td>1.365000</td>
+      <td>1.365000</td>
+      <td>6.071550e+06</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>3.520000</td>
+      <td>3.660000</td>
+      <td>2.950000</td>
+      <td>3.250000</td>
+      <td>3.250000</td>
+      <td>2.742158e+08</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<ul class="simple">
+<li><p>count: Menghitung jumlah entri valid (tidak kosong) dalam kolom.</p></li>
+<li><p>mean: Menghitung rata-rata dari seluruh nilai dalam kolom.</p></li>
+<li><p>std: Mengukur standar deviasi, yang menunjukkan seberapa jauh nilai-nilai dalam kolom menyebar dari rata-rata.</p></li>
+<li><p>min: Menampilkan nilai terkecil dalam kolom.</p></li>
+<li><p>25%: Kuartil pertama, menunjukkan bahwa 25% data memiliki nilai lebih kecil atau sama dengan nilai ini.</p></li>
+<li><p>50% (Median): Kuartil kedua, menunjukkan nilai tengah—setengah dari data berada di bawah dan setengah lainnya di atas nilai ini.</p></li>
+<li><p>75%: Kuartil ketiga, menunjukkan bahwa 75% data memiliki nilai lebih kecil atau sama dengan nilai ini.</p></li>
+<li><p>max: Menampilkan nilai terbesar dalam kolom.</p></li>
+</ul>
+</section>
+<section id="tren-setiap-fitur">
+<h2>Tren Setiap Fitur<a class="headerlink" href="#tren-setiap-fitur" title="Link to this heading">#</a></h2>
+<p>Berikutnya, untuk menganalisis dinamika harga saham Rigetti Computing (RGTI), akan dilakukan visualisasi tren dari setiap fitur dalam data historis. Visualisasi ini mencakup pola pergerakan harga pembukaan (Open), harga tertinggi (High), harga terendah (Low), harga penutupan (Close), serta volume perdagangan (Volume) sepanjang waktu. Analisis ini bertujuan untuk mengidentifikasi pola pergerakan harga saham Rigetti selama periode tertentu dan memberikan wawasan yang lebih mendalam untuk mendukung pengambilan keputusan investasi.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># Tambahkan ini untuk memperbaiki error</span>
+
+<span class="c1"># Membuat subplot otomatis berdasarkan jumlah kolom dalam dataframe</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span><span class="p">))</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)),</span> <span class="mi">3</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Trend of </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/958d476018715a8d5fc550ae368b71c5b3a47799f28e511c27f329048b3ac365.png" src="_images/958d476018715a8d5fc550ae368b71c5b3a47799f28e511c27f329048b3ac365.png" />
+</div>
+</div>
+</section>
+<section id="korelasi-antar-fitur">
+<h2>Korelasi Antar Fitur<a class="headerlink" href="#korelasi-antar-fitur" title="Link to this heading">#</a></h2>
+<p>Korelasi antar fitur dalam data historis harga saham Rigetti Computing (RGTI) mengacu pada hubungan atau keterkaitan antara dua atau lebih variabel dalam dataset. Dalam konteks ini, fitur-fitur seperti harga pembukaan (Open), harga tertinggi (High), harga terendah (Low), harga penutupan (Close), dan volume perdagangan (Volume) dapat memiliki pengaruh satu sama lain. Melakukan analisis korelasi memungkinkan kita untuk memahami sejauh mana perubahan pada satu fitur terkait dengan perubahan pada fitur lainnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Heatmap Korelasi Antar Fitur&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/83cc213a83a164c2afb4bc8caf3d21e7ad6ca69c02beae50a9e4195b41104630.png" src="_images/83cc213a83a164c2afb4bc8caf3d21e7ad6ca69c02beae50a9e4195b41104630.png" />
+</div>
+</div>
+</section>
+<section id="preprocessing-data">
+<h2>Preprocessing Data<a class="headerlink" href="#preprocessing-data" title="Link to this heading">#</a></h2>
+</section>
+<section id="menghapus-fitur-yang-tidak-relevan">
+<h2>Menghapus Fitur yang Tidak Relevan<a class="headerlink" href="#menghapus-fitur-yang-tidak-relevan" title="Link to this heading">#</a></h2>
+<p>Pada tahap perhitungan matriks korelasi, terdeteksi bahwa fitur ‘volume’ tidak memiliki relevansi atau pengaruh terhadap fitur lainnya, sehingga fitur tersebut akan dihapus. Selain itu, fitur ‘Adj Close’ juga dihilangkan karena nilainya identik dengan fitur ‘Close’.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menghapus kolom yang tidak digunakan</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Volume&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>1.12</td>
+      <td>1.150</td>
+      <td>1.040</td>
+      <td>1.050</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>1.05</td>
+      <td>1.075</td>
+      <td>0.995</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>1.07</td>
+      <td>1.080</td>
+      <td>1.000</td>
+      <td>1.020</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>1.02</td>
+      <td>1.040</td>
+      <td>0.990</td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <th>2022-12-12</th>
+      <td>1.00</td>
+      <td>1.010</td>
+      <td>0.950</td>
+      <td>0.964</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="rekayasa-fitur">
+<h2>Rekayasa Fitur<a class="headerlink" href="#rekayasa-fitur" title="Link to this heading">#</a></h2>
+<p>Penelitian ini bertujuan untuk memprediksi harga saham Rigetti Computing pada hari berikutnya. Untuk itu, diperlukan variabel baru yang akan menjadi target prediksi. Fitur ini memberikan indikasi tentang potensi penurunan harga, yang dapat dimanfaatkan oleh investor untuk membeli saham pada harga yang lebih rendah, sehingga meningkatkan kemungkinan memperoleh keuntungan ketika harga saham Rigetti mengalami kenaikan kembali.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close Target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Close Target</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>1.12</td>
+      <td>1.150</td>
+      <td>1.040</td>
+      <td>1.050</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>1.05</td>
+      <td>1.075</td>
+      <td>0.995</td>
+      <td>1.000</td>
+      <td>1.020</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>1.07</td>
+      <td>1.080</td>
+      <td>1.000</td>
+      <td>1.020</td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>1.02</td>
+      <td>1.040</td>
+      <td>0.990</td>
+      <td>0.991</td>
+      <td>0.964</td>
+    </tr>
+    <tr>
+      <th>2022-12-12</th>
+      <td>1.00</td>
+      <td>1.010</td>
+      <td>0.950</td>
+      <td>0.964</td>
+      <td>0.969</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat target untuk n langkah ke depan</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Close Target+</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Menghapus baris yang memiliki nilai NaN pada target</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[:</span><span class="o">-</span><span class="n">FORECAST_STEPS</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Membuat target untuk n langkah ke depan</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Close Target+</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Menghapus baris yang memiliki nilai NaN pada target</span>
+
+<span class="ne">NameError</span>: name &#39;FORECAST_STEPS&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="forecasting">
+<h2>Forecasting<a class="headerlink" href="#forecasting" title="Link to this heading">#</a></h2>
+<p>Pada tahap ini, parameter FORECAST_STEPS digunakan untuk menentukan jumlah periode atau langkah waktu yang akan diprediksi dalam metode peramalan multi-langkah. Nilainya diatur menjadi 4, yang berarti model akan memproyeksikan nilai target untuk 4 hari atau periode mendatang. Parameter ini dapat disesuaikan sesuai dengan kebutuhan analisis atau tujuan prediksi. Dalam pendekatan Iterative Multi-Step Forecasting, setiap prediksi yang dihasilkan akan digunakan sebagai input untuk prediksi berikutnya. Proses dimulai dengan memprediksi langkah pertama, lalu hasilnya menjadi input untuk langkah kedua, dan seterusnya hingga jumlah langkah yang telah ditentukan oleh FORECAST_STEPS tercapai. Pendekatan ini memungkinkan prediksi bertahap untuk beberapa periode ke depan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parameter untuk Multi-Step Forecasting</span>
+<span class="n">FORECAST_STEPS</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># Jumlah langkah ke depan yang ingin diprediksi</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat target untuk n langkah ke depan</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Close Target+</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Menghapus baris yang memiliki nilai NaN pada target</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[:</span><span class="o">-</span><span class="n">FORECAST_STEPS</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="normalisasi-data">
+<h2>Normalisasi Data<a class="headerlink" href="#normalisasi-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import library yang dibutuhkan</span>
+<span class="c1"># Import library yang dibutuhkan</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Inisialisasi scaler untuk fitur dan target</span>
+<span class="n">scaler_features</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">scaler_target</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+
+<span class="c1"># Normalisasi fitur</span>
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">]</span>
+<span class="n">df_features_normalized</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">scaler_features</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]),</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+    <span class="n">index</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span>
+<span class="p">)</span>
+
+<span class="c1"># Normalisasi target</span>
+<span class="n">target_columns</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Close Target+</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+<span class="n">df_target_normalized</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">scaler_target</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">target_columns</span><span class="p">]),</span>
+    <span class="n">columns</span><span class="o">=</span><span class="n">target_columns</span><span class="p">,</span>
+    <span class="n">index</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span>
+<span class="p">)</span>
+
+<span class="c1"># Menggabungkan kembali dataframe yang sudah dinormalisasi</span>
+<span class="n">df_normalized</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_features_normalized</span><span class="p">,</span> <span class="n">df_target_normalized</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="modelling">
+<h2>Modelling<a class="headerlink" href="#modelling" title="Link to this heading">#</a></h2>
+<p>Menjelaskan proses apa saja yang akan diproses berdasarkan data yang sudah ada.</p>
+<p>a. Pembagian Data
+Selanjutnya, data dibagi menjadi data training dan data testing menggunakan fungsi train_test_split, dengan 80% data untuk training dan 20% untuk testing. Proses ini dilakukan dengan opsi shuffle=False agar urutan data tetap terjaga sesuai dengan urutan aslinya. Setelah pembagian, data training (X_train dan y_train) digunakan untuk melatih model, sementara data testing (X_test dan y_test) digunakan untuk mengevaluasi kinerja model yang telah dilatih.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>  <span class="c1"># Tambahkan ini</span>
+
+<span class="c1"># Mengatur fitur (X) dan target (y)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_normalized</span><span class="p">[</span><span class="n">features</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_normalized</span><span class="p">[</span><span class="n">target_columns</span><span class="p">]</span>
+
+<span class="c1"># Membagi data menjadi training dan testing</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>b. Pembangunan Model
+Pada tahap ini, dilakukan eksperimen dengan menggunakan tiga model utama, yaitu Jaringan Saraf Tiruan (JST), Decision Tree, dan kombinasi SVR dengan Decision Tree. Selain itu, untuk meningkatkan akurasi dan kinerja model, diterapkan teknik ensemble melalui metode bagging.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+<span class="kn">from</span> <span class="nn">sklearn.multioutput</span> <span class="kn">import</span> <span class="n">MultiOutputRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Model regresi</span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Jaringan Syaraf Tiruan&quot;</span><span class="p">:</span> <span class="n">MultiOutputRegressor</span><span class="p">(</span><span class="n">MLPRegressor</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,),</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">32</span><span class="p">)),</span>
+    <span class="s2">&quot;Decision Tree&quot;</span><span class="p">:</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">32</span><span class="p">),</span>
+    <span class="s2">&quot;SVR&quot;</span><span class="p">:</span> <span class="n">MultiOutputRegressor</span><span class="p">(</span><span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+<span class="p">}</span>
+
+<span class="c1"># Dictionary untuk menyimpan hasil evaluasi</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># Iterasi setiap model</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="c1"># Latih model</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="c1"># Prediksi pada data uji</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="c1"># Evaluasi untuk setiap target hari ke depan</span>
+    <span class="n">mse_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">mape_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">FORECAST_STEPS</span><span class="p">):</span>
+        <span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">[:,</span> <span class="n">i</span><span class="p">])</span>
+        <span class="n">mape</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">[:,</span> <span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span>
+        <span class="n">mse_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mse</span><span class="p">)</span>
+        <span class="n">mape_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mape</span><span class="p">)</span>
+
+    <span class="c1"># Simpan hasil evaluasi rata-rata</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Average RMSE&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mse_list</span><span class="p">)),</span>
+        <span class="s2">&quot;Average MAPE&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mape_list</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Kembalikan hasil prediksi ke skala asli</span>
+    <span class="n">y_pred_original</span> <span class="o">=</span> <span class="n">scaler_target</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">y_test_original</span> <span class="o">=</span> <span class="n">scaler_target</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+
+    <span class="c1"># Plot hasil prediksi untuk setiap hari</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">FORECAST_STEPS</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">y_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y_test_original</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Actual Target+</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span>
+        <span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">y_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y_pred_original</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Predicted Target+</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Tambahkan detail plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Actual vs Predicted Values (</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Tanggal&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Kurs&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># Tampilkan plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Tampilkan hasil evaluasi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HASIL EVALUASI MODEL&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">model</span><span class="p">,</span> <span class="n">metrics</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Average RMSE: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;Average RMSE&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Average MAPE: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;Average MAPE&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Cari model dengan Average MAPE terbaik (nilai terkecil)</span>
+<span class="n">best_model_name</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="s2">&quot;Average MAPE&quot;</span><span class="p">])</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">models</span><span class="p">[</span><span class="n">best_model_name</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Model terbaik (</span><span class="si">{</span><span class="n">best_model_name</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="evaluasi">
+<h2>Evaluasi<a class="headerlink" href="#evaluasi" title="Link to this heading">#</a></h2>
+<p>Berdasarkan hasil evaluasi, Jaringan Syaraf Tiruan (RMSE: 0.05, MAPE: 12.74%) adalah model terbaik, dengan akurasi prediksi yang paling tinggi. SVR (RMSE: 0.05, MAPE: 14.96%) memiliki performa serupa tetapi dengan kesalahan relatif lebih besar. Decision Tree (RMSE: 0.09, MAPE: 20.70%) menunjukkan performa terburuk, dengan kesalahan yang lebih tinggi baik dalam RMSE maupun MAPE.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="proyek2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Laporan Proyek 2</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-saham-rigetti-computing-rgti-data-historis-untuk-strategi-investasi-inovatif">Prediksi Saham Rigetti Computing (RGTI): Data Historis untuk Strategi Investasi Inovatif</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-proyek">Tujuan Proyek</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologi">Metodologi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi">Eksplorasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tren-setiap-fitur">Tren Setiap Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-antar-fitur">Korelasi Antar Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">Preprocessing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-fitur-yang-tidak-relevan">Menghapus Fitur yang Tidak Relevan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekayasa-fitur">Rekayasa Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forecasting">Forecasting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

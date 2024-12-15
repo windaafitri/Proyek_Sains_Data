@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: proyek1
+- file: proyek2
+- file: proyek3
+

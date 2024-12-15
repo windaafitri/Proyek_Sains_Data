@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'proyek3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Laporan Proyek 2" href="proyek2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,9 +178,10 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="proyek1.html">Laporan Proyek 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proyek2.html">Laporan Proyek 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Laporan Proyek 3</a></li>
 </ul>
 
     </div>
@@ -706,6 +706,9 @@ dtype: int64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/958d476018715a8d5fc550ae368b71c5b3a47799f28e511c27f329048b3ac365.png" src="_images/958d476018715a8d5fc550ae368b71c5b3a47799f28e511c27f329048b3ac365.png" />
+</div>
 </div>
 </section>
 <section id="korelasi-antar-fitur">
@@ -721,6 +724,9 @@ dtype: int64
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/83cc213a83a164c2afb4bc8caf3d21e7ad6ca69c02beae50a9e4195b41104630.png" src="_images/83cc213a83a164c2afb4bc8caf3d21e7ad6ca69c02beae50a9e4195b41104630.png" />
 </div>
 </div>
 </section>
@@ -738,6 +744,77 @@ dtype: int64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>1.12</td>
+      <td>1.150</td>
+      <td>1.040</td>
+      <td>1.050</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>1.05</td>
+      <td>1.075</td>
+      <td>0.995</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>1.07</td>
+      <td>1.080</td>
+      <td>1.000</td>
+      <td>1.020</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>1.02</td>
+      <td>1.040</td>
+      <td>0.990</td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <th>2022-12-12</th>
+      <td>1.00</td>
+      <td>1.010</td>
+      <td>0.950</td>
+      <td>0.964</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="rekayasa-fitur">
@@ -752,6 +829,84 @@ dtype: int64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Close Target</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-12-06</th>
+      <td>1.12</td>
+      <td>1.150</td>
+      <td>1.040</td>
+      <td>1.050</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <th>2022-12-07</th>
+      <td>1.05</td>
+      <td>1.075</td>
+      <td>0.995</td>
+      <td>1.000</td>
+      <td>1.020</td>
+    </tr>
+    <tr>
+      <th>2022-12-08</th>
+      <td>1.07</td>
+      <td>1.080</td>
+      <td>1.000</td>
+      <td>1.020</td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <th>2022-12-09</th>
+      <td>1.02</td>
+      <td>1.040</td>
+      <td>0.990</td>
+      <td>0.991</td>
+      <td>0.964</td>
+    </tr>
+    <tr>
+      <th>2022-12-12</th>
+      <td>1.00</td>
+      <td>1.010</td>
+      <td>0.950</td>
+      <td>0.964</td>
+      <td>0.969</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -761,6 +916,19 @@ dtype: int64
 
 <span class="c1"># Menghapus baris yang memiliki nilai NaN pada target</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[:</span><span class="o">-</span><span class="n">FORECAST_STEPS</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Membuat target untuk n langkah ke depan</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">df</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Close Target+</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Menghapus baris yang memiliki nilai NaN pada target</span>
+
+<span class="ne">NameError</span>: name &#39;FORECAST_STEPS&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -967,6 +1135,15 @@ Pada tahap ini, dilakukan eksperimen dengan menggunakan tiga model utama, yaitu 
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="proyek2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Laporan Proyek 2</p>
+      </div>
+    </a>
 </div>
                 </footer>
               

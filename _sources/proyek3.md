@@ -340,7 +340,8 @@ print(f" Model terbaik ({best_model_name})")
 ## Evaluasi
 Berdasarkan hasil evaluasi, Jaringan Syaraf Tiruan (RMSE: 0.05, MAPE: 12.74%) adalah model terbaik, dengan akurasi prediksi yang paling tinggi. SVR (RMSE: 0.05, MAPE: 14.96%) memiliki performa serupa tetapi dengan kesalahan relatif lebih besar. Decision Tree (RMSE: 0.09, MAPE: 20.70%) menunjukkan performa terburuk, dengan kesalahan yang lebih tinggi baik dalam RMSE maupun MAPE.
 
-
+## Deploy Huggingface
+link: https://huggingface.co/spaces/windaafitri/Rigetti 
 
 
 

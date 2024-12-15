@@ -272,7 +272,8 @@ for model, metrics in results.items():
     print(f"{model}:\n  RMSE: {metrics['RMSE']:.2f}\n  MAPE: {metrics['MAPE']:.2f}%\n")
 ```
 
-
+## Deploy Huggingface
+link: https://huggingface.co/spaces/windaafitri/Harga-Minyak 
 
 
 

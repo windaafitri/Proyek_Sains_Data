@@ -394,6 +394,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-huggingface">Deploy Huggingface</a></li>
 </ul>
             </nav>
         </div>
@@ -920,8 +921,8 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                              </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Membuat target untuk n langkah ke depan</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">FORECAST_STEPS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
@@ -1103,6 +1104,10 @@ Pada tahap ini, dilakukan eksperimen dengan menggunakan tiga model utama, yaitu 
 <h2>Evaluasi<a class="headerlink" href="#evaluasi" title="Link to this heading">#</a></h2>
 <p>Berdasarkan hasil evaluasi, Jaringan Syaraf Tiruan (RMSE: 0.05, MAPE: 12.74%) adalah model terbaik, dengan akurasi prediksi yang paling tinggi. SVR (RMSE: 0.05, MAPE: 14.96%) memiliki performa serupa tetapi dengan kesalahan relatif lebih besar. Decision Tree (RMSE: 0.09, MAPE: 20.70%) menunjukkan performa terburuk, dengan kesalahan yang lebih tinggi baik dalam RMSE maupun MAPE.</p>
 </section>
+<section id="deploy-huggingface">
+<h2>Deploy Huggingface<a class="headerlink" href="#deploy-huggingface" title="Link to this heading">#</a></h2>
+<p>link: <a class="reference external" href="https://huggingface.co/spaces/windaafitri/Rigetti">https://huggingface.co/spaces/windaafitri/Rigetti</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1177,6 +1182,7 @@ Pada tahap ini, dilakukan eksperimen dengan menggunakan tiga model utama, yaitu 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">Modelling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-huggingface">Deploy Huggingface</a></li>
 </ul>
   </nav></div>
 
